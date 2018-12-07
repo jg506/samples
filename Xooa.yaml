@@ -11,7 +11,7 @@
 #     README:              -> Path to the documentation of the smart contract App [Optional Parameter]
 
 Apps:
-  Xooa-Get-Set:
+  Xooa-Get-Set-forked:
     Name: Get-Set
     Description: Xooa Get Set Smart Contract
     path: /get-set/smartcontract
