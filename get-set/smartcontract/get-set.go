@@ -40,7 +40,7 @@ type SimpleAsset struct {
 // data. Note that chaincode upgrade also calls this function to reset
 // or to migrate data.
 func (t *SimpleAsset) Init(stub shim.ChaincodeStubInterface) peer.Response {
-	logger.Debug("Init() called.")
+	logger.Debug("Init() called. Hi assaf")
 	return shim.Success(nil)
 }
 
@@ -62,7 +62,7 @@ func (t *SimpleAsset) Invoke(stub shim.ChaincodeStubInterface) peer.Response {
 
 	logger.Error("Function declaration not found for ", fn)
 	resp := shim.Error("Invalid function name : " + fn)
-	resp.Status = 404
+	resp.Status = 405
 	return resp
 }
 
