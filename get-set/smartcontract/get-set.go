@@ -62,7 +62,7 @@ func (t *SimpleAsset) Invoke(stub shim.ChaincodeStubInterface) peer.Response {
 
 	logger.Error("Function declaration not found for ", fn)
 	resp := shim.Error("Invalid function name : " + fn)
-	resp.Status = 404
+	resp.Status = 405
 	return resp
 }
 
